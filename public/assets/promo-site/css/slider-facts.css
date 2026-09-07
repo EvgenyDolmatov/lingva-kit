@@ -1,0 +1,93 @@
+.achievements-slider .owl-stage::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.achievements-slider .slide-item {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #fd602c;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.slide-title {
+    width: 100%;
+}
+
+.slide-title h2 {
+    padding: 30px 0;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.slide-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: stretch;
+}
+
+.slide-content .slide-content__left,
+.slide-content .slide-content__right {
+    background-color: #fff;
+    width: 50%;
+}
+
+.slide-content .slide-content__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fff;
+    width: 70%;
+    padding: 50px 50px 50px 200px;
+}
+
+.slide-content .slide-content__right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: #fff;
+}
+
+.slide-content h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.slide-content__fact {
+    color: #000;
+    text-align: left;
+}
+
+.slide-content__fact:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.slide-content__fact h3 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #94190B;
+    margin-bottom: 30px;
+}
+
+.slide-content__fact p {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+@media (max-width: 1199px) {
+    #achievements-section {
+        display: none;
+    }
+}

@@ -51,181 +51,159 @@
     <section class="sec-padding testimonials">
         <div class="container">
             <div class="col-12 text-center">
-                <h1 class="paddtop1 dosis font-weight-5 lspace-sm">Основные сведения</h1>
+                <h1 class="paddtop1 dosis font-weight-5 lspace-sm">Документы</h1>
                 <div class="title-line-4 align-center"></div>
-                <h3 class="font-weight-5">ИП Пристинская Алена Алексеевна</h3>
-                <h3 class="font-weight-5" style="margin-bottom: 50px; line-height: 1.2">
-                    Лицензия на образовательную деятельность<br>№ ЛО35-01235-50/00956971 от
-                    30.11.2023
-                </h3>
 
-                <h4 style="margin-bottom: 100px;">
-                    <a href="{{asset("documents/01_Политика-в-области-персональных-данных.pdf")}}"
-                       style="color: #0d75c1"
-                       target="_blank">
-                        Сведения об образовательной организации
-                    </a>
-                </h4>
-
-                <h1 class="paddtop1 dosis font-weight-5 lspace-sm" style="margin-bottom: 100px">Документы</h1>
                 <div class="text-left">
                     <h4>
-                        <a href="{{asset("documents/01-dogovor-oferta.pdf")}}"
+                        <a href="{{asset("documents/2026-2027/01 Договор-оферта ЛИНГВАКИТ 2026.docx")}}"
                            style="color: #0d75c1"
                            target="_blank">
-                            Договор-оферта ЛингваКит
+                            Договор-оферта ЛИНГВАКИТ 2026
                         </a>
                     </h4>
 
                     <h4>
-                        <a href="{{asset("documents/02-politika-v-oblasti-personalnyh-dannyh.pdf")}}"
+                        <a href="{{asset("documents/2026-2027/02 РП ЛИНГВАКИТ-2026.pdf")}}"
                            style="color: #0d75c1"
                            target="_blank">
-                            Политика в области персональных данных
+                            РП ЛИНГВАКИТ 2026
                         </a>
                     </h4>
 
                     <h4>
-                        <a href="{{asset("documents/03-rp.pdf")}}"
+                        <a href="{{asset("documents/2026-2027/03-Политика в области персональных данных 2026.pdf")}}"
                            style="color: #0d75c1"
                            target="_blank">
-                            РП ЛингваКит
+                            Политика в области персональных данных 2026
                         </a>
                     </h4>
 
                     <h4>
-                        <a href="{{asset("documents/04-pravila-vnutrennego-rasporyadka-obuchayushchegosya.pdf")}}"
+                        <a href="{{asset("documents/2026-2027/04-Правила внутреннего распорядка обучающегося 2026.pdf")}}"
                            style="color: #0d75c1"
                            target="_blank">
-                            Правила внутреннего распорядка обучающегося (лингвакит)
+                            Правила внутреннего распорядка обучающегося 2026
                         </a>
                     </h4>
 
                     <h4>
-                        <a href="{{asset("documents/05-pravila-vnutrennego-trudovogo-rasporyadka-dlya-rabotnikov-individualnogo-predprinimatelya.pdf")}}"
+                        <a href="{{asset("documents/2026-2027/05-Правила внутреннего трудового распорядка для работников ИП 2026.pdf")}}"
                            style="color: #0d75c1"
                            target="_blank">
-                            Правила внутреннего трудового распорядка для работников индивидуального предпринимателя
+                            Правила внутреннего трудового распорядка для работников ИП 2026
                         </a>
                     </h4>
 
                     <h4>
-                        <a href="{{asset("documents/06-otchet-o-rezultatah-samoobsledovaniya-individualnogo-predprinimatelya-pristinskoĭ-aa.pdf")}}"
+                        <a href="{{asset("documents/2026-2027/06-Положение о режиме занятий обучающихся 2026.pdf")}}"
                            style="color: #0d75c1"
                            target="_blank">
-                            Отчет о результатах самообследования Индивидуального предпринимателя Пристинской А.А.
+                            Положение о режиме занятий обучающихся 2026
                         </a>
                     </h4>
 
                     <h4>
-                        <a href="{{asset("documents/07-polozhenie-o-rezhime-zanyatiĭ-obuchayushchihsya.pdf")}}"
+                        <a href="{{asset("documents/2026-2027/07-Формы, периодичность и порядок текущего контроля успеваемости и промежуточной аттестации обучающихся 2026 .pdf")}}"
                            style="color: #0d75c1"
                            target="_blank">
-                            Положение о режиме занятий обучающихся
+                            Формы, периодичность и порядок текущего контроля успеваемости и промежуточной аттестации обучающихся 2026
                         </a>
                     </h4>
 
                     <h4>
-                        <a href="{{asset("documents/08-formy-periodichnost-i-poryadok-tekushchego-kontrolya-uspevaemosti-i-promezhutochnoĭ-attestacii-obuchayushchihsya.pdf")}}"
+                        <a href="{{asset("documents/2026-2027/08-Положение о порядке и основаниях перевода, отчисления и восстановления обучающихся 2026.pdf")}}"
                            style="color: #0d75c1"
                            target="_blank">
-                            Формы, периодичность и порядок текущего контроля успеваемости и промежуточной аттестации обучающихся
+                            Положение о порядке и основаниях перевода, отчисления и восстановления обучающихся 2026
                         </a>
                     </h4>
 
                     <h4>
-                        <a href="{{asset("documents/09-polozhenie-o-poryadke-i-osnovaniyah-perevoda-otchisleniya-i-vosstanovleniya-obuchayushchihsya.pdf")}}"
+                        <a href="{{asset("documents/2026-2027/09-Правила приема на обучение по программам дополнительного образования 2026.pdf")}}"
                            style="color: #0d75c1"
                            target="_blank">
-                            Положение о порядке и основаниях перевода, отчисления и восстановления обучающихся
+                            Правила приема на обучение по программам дополнительного образования 2026
                         </a>
                     </h4>
 
                     <h4>
-                        <a href="{{asset("documents/10-pravila-priema-na-obuchenie-po-programmam-dopolnitelnogo-obrazovaniya.pdf")}}"
+                        <a href="{{asset("documents/2026-2027/10-Положение о порядке и основаниях перевода, отчисления и восстановления обучающихся 2026.pdf")}}"
                            style="color: #0d75c1"
                            target="_blank">
-                            Правила приема на обучение по программам дополнительного образования
+                            Положение о порядке и основаниях перевода, отчисления и восстановления обучающихся 2026
                         </a>
                     </h4>
 
                     <h4>
-                        <a href="{{asset("documents/11-polozhenie-o-poryadke-i-osnovaniyah-perevoda-otchisleniya-i-vosstanovleniya-obuchayushchihsya.pdf")}}"
+                        <a href="{{asset("documents/2026-2027/11-Правила оказания платных образовательных услуг 2026.pdf")}}"
                            style="color: #0d75c1"
                            target="_blank">
-                            Положение о порядке и основаниях перевода, отчисления и восстановления обучающихся
+                            Правила оказания платных образовательных услуг 2026
                         </a>
                     </h4>
 
                     <h4>
-                        <a href="{{asset("documents/12-pravila-okazaniya-platnyh-obrazovatelnyh-uslug.pdf")}}"
+                        <a href="{{asset("documents/2026-2027/12-Об утверждении стоимости обучения 2026.pdf")}}"
                            style="color: #0d75c1"
                            target="_blank">
-                            Правила оказания платных образовательных услуг
+                            Об утверждении стоимости обучения 2026
                         </a>
                     </h4>
 
                     <h4>
-                        <a href="{{asset("documents/13-ob-utverzhdenii-stoimosti-obucheniya.pdf")}}"
+                        <a href="{{asset("documents/2026-2027/13-Договор_Несовершеннолетние оказания_дистанционных_образовательных_услуг_ ИП_Пристинская 2026.pdf")}}"
                            style="color: #0d75c1"
                            target="_blank">
-                            Об утверждении стоимости обучения
+                            Договор "Несовершеннолетние" оказания дистанционных образовательных услуг ИП Пристинская 2026
                         </a>
                     </h4>
 
                     <h4>
-                        <a href="{{asset("documents/14-licenziya.pdf")}}"
+                        <a href="{{asset("documents/2026-2027/14-Договор Совершеннолетние_оказания_дистанционных_образовательных_услуг_ИП_Пристинская 2026.pdf")}}"
                            style="color: #0d75c1"
                            target="_blank">
-                            Лицензия
+                            Договор "Совершеннолетние" оказания дистанционных образовательных услуг ИП Пристинская 2026
                         </a>
                     </h4>
 
                     <h4>
-                        <a href="{{asset("documents/15-reestrovaya-vypiska.pdf")}}"
+                        <a href="{{asset("documents/2026-2027/16-Отчет о результатах самообследования Индивидуального предпринимателя Пристинской А.А. 2026.pdf")}}"
                            style="color: #0d75c1"
                            target="_blank">
-                            Реестровая выписка
+                            Отчет о результатах самообследования Индивидуального предпринимателя Пристинской А.А. 2026
                         </a>
                     </h4>
 
                     <h4>
-                        <a href="{{asset("documents/16-dogovor-okazaniya-distancionnyh-obrazovatelnyh-uslug-ip-pristinskaya.docx")}}"
+                        <a href="{{asset("documents/2026-2027/17-1-приказ об отчислении 2026.docx")}}"
                            style="color: #0d75c1"
                            target="_blank">
-                            Договор оказания дистанционных образовательных услуг ИП Пристинская А.А.
+                            Приказ об отчислении 02.2026 г.
                         </a>
                     </h4>
 
                     <h4>
-                        <a href="{{asset("documents/17-prikaz-ob-otchislenii.docx")}}"
+                        <a href="{{asset("documents/2026-2027/17-2-об отчислении 2026-avg.docx")}}"
                            style="color: #0d75c1"
                            target="_blank">
-                            Приказ об отчислении 8 сентября 2025 г.
+                            Приказ об отчислении 03.2026 г.
                         </a>
                     </h4>
 
                     <h4>
-                        <a href="{{asset("documents/18-prikaz-o-zachislenii.docx")}}"
+                        <a href="{{asset("documents/2026-2027/17-3-об отчислении 2026.docx")}}"
                            style="color: #0d75c1"
                            target="_blank">
-                            Приказ о зачислении 8 сентября 2025 г.
+                            Приказ об отчислении 04.2026 г.
                         </a>
                     </h4>
 
                     <h4>
-                        <a href="{{asset("documents/19-prikaz-o-zachislenii-26-avg.docx")}}"
+                        <a href="{{asset("documents/2026-2027/03-Политика в области персональных данных 2026.pdf")}}"
                            style="color: #0d75c1"
                            target="_blank">
                             Приказ о зачислении от 26 августа 2025 г.
-                        </a>
-                    </h4>
-
-                    <h4>
-                        <a href="{{asset("documents/20-prikaz-o-zachislenii-ot-01-12.docx")}}"
-                           style="color: #0d75c1"
-                           target="_blank">
-                            Приказ о зачислении от 1 декабря 2025 г.
                         </a>
                     </h4>
                 </div>

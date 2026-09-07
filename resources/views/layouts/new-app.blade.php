@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="{{ asset('assets/promo-site/css/et-line-font/et-line-font.css')}}">
     @yield('styles')
     <link rel="stylesheet" href="{{ asset('assets/promo-site/css/custom.css')}}"/>
+    @yield('components-css')
 </head>
 
 <body>
