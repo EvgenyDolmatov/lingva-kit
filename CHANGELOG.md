@@ -2,6 +2,13 @@
 
 ---
 
+## [2.5.1] - 2026-09-07
+### Fixed:
+* Register user process
+
+
+---
+
 ## [2.5.0] - 2026-09-07
 ### Added:
 * Slider with facts

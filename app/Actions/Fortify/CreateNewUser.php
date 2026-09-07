@@ -11,6 +11,7 @@ use App\Models\Captcha;
 use App\Models\Setting;
 use App\Models\User;
 use Exception;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
@@ -50,24 +51,45 @@ class CreateNewUser implements CreatesNewUsers
     {
         $this->validateInput($input);
 
-        $roleName = $input['user_type'] === 'student' ? 'user' : 'teacher';
-        $role = Role::where('name', $roleName)->firstOrFail();
+        return DB::transaction(function () use ($input) {
+            $roleName = $input['user_type'] === 'student' ? 'user' : 'teacher';
+            $role = Role::where('name', $roleName)->firstOrFail();
 
-        $user = User::create([
-            'name' => $input['name'],
-            'surname' => $input['surname'],
-            'email' => $input['email'],
-            'password' => Hash::make($input['password']),
-            'role_id' => $role->id,
-        ]);
-        $user->roles()->attach($role);
+            $user = User::withTrashed()->where('email', $input['email'])->first();
 
-        Setting::create([
-            'user_id' => $user->id,
-            'locale' => 'ru',
-        ]);
+            if ($user) {
+                if ($user->trashed()) {
+                    $user->restore();
+                }
 
-        return $user;
+                $user->update([
+                    'name' => $input['name'],
+                    'surname' => $input['surname'],
+                    'password' => Hash::make($input['password']),
+                    'role_id' => $role->id,
+                    'email_verified_at' => null,
+                ]);
+
+                $user->syncRoles([$role]);
+            } else {
+                $user = User::create([
+                    'name' => $input['name'],
+                    'surname' => $input['surname'],
+                    'email' => $input['email'],
+                    'password' => Hash::make($input['password']),
+                    'role_id' => $role->id,
+                ]);
+
+                $user->roles()->attach($role);
+            }
+
+            Setting::firstOrCreate(
+                ['user_id' => $user->id],
+                ['locale' => 'ru']
+            );
+
+            return $user;
+        });
     }
 
     /**
@@ -83,18 +105,12 @@ class CreateNewUser implements CreatesNewUsers
                 'string',
                 'email',
                 'max:255',
-                Rule::unique(User::class),
+                Rule::unique(User::class)->whereNull('deleted_at'),
             ],
             'password' => $this->passwordRules(),
-            'agreement' => ['required']
-        ]);
-
-        $validator->after(function ($validator) use ($input) {
-            $this->validateCaptcha($input, $validator);
-//            $this->validateEmailDomain($input['email'], $validator);
-        });
-
-        $validator->validate();
+            'agreement' => ['accepted'],
+            'user_type' => ['required', 'in:student,teacher']
+        ])->validate();
     }
 
     private function validateCaptcha(array $input, $validator): void
