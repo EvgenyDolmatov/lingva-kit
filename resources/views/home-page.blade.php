@@ -11,6 +11,10 @@
     <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet"/>
 @endsection
 
+@section('components-css')
+    <link href="{{ asset('assets/promo-site/css/slider-facts.css')}}" rel="stylesheet"/>
+@endsection
+
 @section('scripts')
     <script src="{{ asset('assets/promo-site/js/masterslider/masterslider.min.js')}}"></script>
     <script type="text/javascript">
@@ -45,6 +49,24 @@
     <script src="{{ asset('assets/promo-site/js/animations/js/appear.min.js')}}" type="text/javascript"></script>
 
     <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#achievements-slider').owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 0,
+                nav: true,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                navText: [
+                    '<i class="fa fa-angle-left"></i>',
+                    '<i class="fa fa-angle-right"></i>'
+                ]
+            });
+        });
+    </script>
 @endsection
 
 @section('content')
@@ -314,6 +336,88 @@
     </section>
     <div class="clearfix"></div>
 
+    <section id="achievements-section" class="sec-tpadding-2" style="padding: 0;">
+        <div class="container-fluid" style="padding: 0;">
+            <div id="achievements-slider" class="owl-carousel owl-theme achievements-slider">
+
+                <div class="item slide-item">
+                    <div class="slide-title">
+                        <h2>МАЙ 2026</h2>
+                    </div>
+
+                    <div class="slide-content">
+                        <div class="slide-content__left">
+                            <div class="slide-content__fact">
+                                <h3>HSK-1 (max 200 баллов)</h3>
+                                <p>12 учеников - ВСЕ сдали!</p>
+                                <p>4 человека - 200 баллов</p>
+                                <p>Еще 2 человека - выше 180 баллов</p>
+                                <p>Средний балл - 176 баллов</p>
+                            </div>
+
+                            <div class="slide-content__fact">
+                                <h3>HSK-2 (max 200 баллов)</h3>
+                                <p>12 учеников - ВСЕ сдали!</p>
+                                <p>4 человека - 200 баллов</p>
+                                <p>Еще 2 человека - выше 180 баллов</p>
+                                <p>Средний балл - 176 баллов</p>
+                            </div>
+
+                            <div class="slide-content__fact">
+                                <h3>HSK-3 (max 300 баллов + 100 устная часть)</h3>
+                                <p>12 учеников - ВСЕ сдали!</p>
+                                <p>4 человека - 200 баллов</p>
+                                <p>Еще 2 человека - выше 180 баллов</p>
+                                <p>Средний балл - 176 баллов</p>
+                            </div>
+                        </div>
+
+                        <div class="slide-content__right">
+                            <div class="slide-content__image">
+                                <img src="{{asset('assets/promo-site/images/sliders/facts-slider/slide1.jpg')}}"
+                                     alt=""
+                                     class="img-responsive"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item slide-item">
+                    <div class="slide-title">
+                        <h2>Наши результаты HSK растут каждый год!</h2>
+                    </div>
+
+                    <div class="slide-content">
+                        <div class="slide-content__left">
+                            <div class="slide-content__fact">
+                                <h3>2024</h3>
+                                <p>15 учеников HSK-1, максимальный балл - 200 (5 человек)</p>
+                            </div>
+
+                            <div class="slide-content__fact">
+                                <h3>2025</h3>
+                                <p>18 учеников HSK-1, максимальный балл - 200 (6 человек)</p>
+                            </div>
+
+                            <div class="slide-content__fact">
+                                <h3>2026</h3>
+                                <p>40 учеников за один год - и это только начало!</p>
+                            </div>
+                        </div>
+
+                        <div class="slide-content__right">
+                            <div class="slide-content__image">
+                                <img src="{{asset('assets/promo-site/images/sliders/facts-slider/slide2.jpg')}}"
+                                     alt=""
+                                     class="img-responsive"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="sec-padding testimonials">
         <div class="container">
             <div class="row">
@@ -425,157 +529,7 @@
                 <h1 class="paddtop1 dosis font-weight-5 lspace-sm">Документы</h1>
                 <div class="title-line-4 align-center"></div>
 
-                <h4>
-                    <a href="{{asset("documents/2026-2027/01 Договор-оферта ЛИНГВАКИТ 2026.docx")}}"
-                       style="color: #0d75c1"
-                       target="_blank">
-                        Договор-оферта ЛИНГВАКИТ 2026
-                    </a>
-                </h4>
 
-                <h4>
-                    <a href="{{asset("documents/2026-2027/02 РП ЛИНГВАКИТ-2026.pdf")}}"
-                       style="color: #0d75c1"
-                       target="_blank">
-                        РП ЛИНГВАКИТ 2026
-                    </a>
-                </h4>
-
-                <h4>
-                    <a href="{{asset("documents/2026-2027/03-Политика в области персональных данных 2026.pdf")}}"
-                       style="color: #0d75c1"
-                       target="_blank">
-                        Политика в области персональных данных 2026
-                    </a>
-                </h4>
-
-                <h4>
-                    <a href="{{asset("documents/2026-2027/04-Правила внутреннего распорядка обучающегося 2026.pdf")}}"
-                       style="color: #0d75c1"
-                       target="_blank">
-                        Правила внутреннего распорядка обучающегося 2026
-                    </a>
-                </h4>
-
-                <h4>
-                    <a href="{{asset("documents/2026-2027/05-Правила внутреннего трудового распорядка для работников ИП 2026.pdf")}}"
-                       style="color: #0d75c1"
-                       target="_blank">
-                        Правила внутреннего трудового распорядка для работников ИП 2026
-                    </a>
-                </h4>
-
-                <h4>
-                    <a href="{{asset("documents/2026-2027/06-Положение о режиме занятий обучающихся 2026.pdf")}}"
-                       style="color: #0d75c1"
-                       target="_blank">
-                        Положение о режиме занятий обучающихся 2026
-                    </a>
-                </h4>
-
-                <h4>
-                    <a href="{{asset("documents/2026-2027/07-Формы, периодичность и порядок текущего контроля успеваемости и промежуточной аттестации обучающихся 2026 .pdf")}}"
-                       style="color: #0d75c1"
-                       target="_blank">
-                        Формы, периодичность и порядок текущего контроля успеваемости и промежуточной аттестации обучающихся 2026
-                    </a>
-                </h4>
-
-                <h4>
-                    <a href="{{asset("documents/2026-2027/08-Положение о порядке и основаниях перевода, отчисления и восстановления обучающихся 2026.pdf")}}"
-                       style="color: #0d75c1"
-                       target="_blank">
-                        Положение о порядке и основаниях перевода, отчисления и восстановления обучающихся 2026
-                    </a>
-                </h4>
-
-                <h4>
-                    <a href="{{asset("documents/2026-2027/09-Правила приема на обучение по программам дополнительного образования 2026.pdf")}}"
-                       style="color: #0d75c1"
-                       target="_blank">
-                        Правила приема на обучение по программам дополнительного образования 2026
-                    </a>
-                </h4>
-
-                <h4>
-                    <a href="{{asset("documents/2026-2027/10-Положение о порядке и основаниях перевода, отчисления и восстановления обучающихся 2026.pdf")}}"
-                       style="color: #0d75c1"
-                       target="_blank">
-                        Положение о порядке и основаниях перевода, отчисления и восстановления обучающихся 2026
-                    </a>
-                </h4>
-
-                <h4>
-                    <a href="{{asset("documents/2026-2027/11-Правила оказания платных образовательных услуг 2026.pdf")}}"
-                       style="color: #0d75c1"
-                       target="_blank">
-                        Правила оказания платных образовательных услуг 2026
-                    </a>
-                </h4>
-
-                <h4>
-                    <a href="{{asset("documents/2026-2027/12-Об утверждении стоимости обучения 2026.pdf")}}"
-                       style="color: #0d75c1"
-                       target="_blank">
-                        Об утверждении стоимости обучения 2026
-                    </a>
-                </h4>
-
-                <h4>
-                    <a href="{{asset("documents/2026-2027/13-Договор_Несовершеннолетние оказания_дистанционных_образовательных_услуг_ ИП_Пристинская 2026.pdf")}}"
-                       style="color: #0d75c1"
-                       target="_blank">
-                        Договор "Несовершеннолетние" оказания дистанционных образовательных услуг ИП Пристинская 2026
-                    </a>
-                </h4>
-
-                <h4>
-                    <a href="{{asset("documents/2026-2027/14-Договор Совершеннолетние_оказания_дистанционных_образовательных_услуг_ИП_Пристинская 2026.pdf")}}"
-                       style="color: #0d75c1"
-                       target="_blank">
-                        Договор "Совершеннолетние" оказания дистанционных образовательных услуг ИП Пристинская 2026
-                    </a>
-                </h4>
-
-                <h4>
-                    <a href="{{asset("documents/2026-2027/16-Отчет о результатах самообследования Индивидуального предпринимателя Пристинской А.А. 2026.pdf")}}"
-                       style="color: #0d75c1"
-                       target="_blank">
-                        Отчет о результатах самообследования Индивидуального предпринимателя Пристинской А.А. 2026
-                    </a>
-                </h4>
-
-                <h4>
-                    <a href="{{asset("documents/2026-2027/17-1-приказ об отчислении 2026.docx")}}"
-                       style="color: #0d75c1"
-                       target="_blank">
-                        Приказ об отчислении 02.2026 г.
-                    </a>
-                </h4>
-
-                <h4>
-                    <a href="{{asset("documents/2026-2027/17-2-об отчислении 2026-avg.docx")}}"
-                       style="color: #0d75c1"
-                       target="_blank">
-                        Приказ об отчислении 03.2026 г.
-                    </a>
-                </h4>
-
-                <h4>
-                    <a href="{{asset("documents/2026-2027/17-3-об отчислении 2026.docx")}}"
-                       style="color: #0d75c1"
-                       target="_blank">
-                        Приказ об отчислении 04.2026 г.
-                    </a>
-                </h4>
-
-                <h4>
-                    <a href="{{asset("documents/2026-2027/03-Политика в области персональных данных 2026.pdf")}}"
-                       style="color: #0d75c1"
-                       target="_blank">
-                        Приказ о зачислении от 26 августа 2025 г.
-                    </a>
-                </h4>
 
                 <div style="margin-bottom: 100px;"></div>
 

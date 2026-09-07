@@ -2,6 +2,13 @@
 
 ---
 
+## [2.5.0] - 2026-09-07
+### Added:
+* Slider with facts
+* Migrate documents from landing to documents page
+
+---
+
 ## [2.4.0] - 2026-08-18
 ### Change:
 * Redesign landing page 2026-2027
